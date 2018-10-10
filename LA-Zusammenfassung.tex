@@ -71,7 +71,32 @@ bookmarks=true,%
         Es sei aber gesagt, dass diese sich aus den rationalen Zahlen \(\mathbb{Q} \subseteq \mathbb{R}\) und den irrationalen Zahlen \(\mathbb{R} \setminus \mathbb{Q}\) aufbauen.
         Irrationale Zahlen sind dann z.B. \(\pi, \mathrm{e}\) oder \(\sqrt{2}\).
 
-    \section{Gruppen}
-        \subsection{Verknüpfungen}
+\section{Relationen und Abbildungen}
+    \subsection{Relationen}
+        Oben haben wir mögliche Beziehungen zwischen Mengen gesehen.
+        Nun wollen wir uns Beziehungen einzelner Elemente von Mengen anschauen: Die sogenannten Relationen.
+        Eine Relation sagt verallgemeinert aus, ob ein Element mit einem anderen in einer bestimmten Weise in Beziehung steht oder nicht.
+        Das schöne daran ist nun, das wir Relationen wieder per Definition auf die Mengenlehre zurückführen können.
+        \\Wir führen zunächst das kartesische Produkt zweier Mengen A und B ein:
+        \\\quad\(A \times B := \{(a, b) : a \in A, b \in B\}\)
+        \\Welche Elemente kann man nun aus dieser neuen Menge \(A \times B\) herausnehmen?
+        Im kartesischen Produkt finden wir jede Kombination von den Elementen aus A mit Elementen aus B.
+        Ein Element aus diesem kartesischen Produkt nennen wir (2-)Tupel oder auch Paar. 
+        Ein Tupel ist eine Liste oder Folge von Elementen aus Mengen. 
+        In unserem Fall ist der erste Eintrag aus der Menge A und der zweite Eintrag aus der Menge B.
+        \\Wenn wir uns jetzt nochmal die Relationen von oben anschauen erkennen wir, 
+        das eine Relation R von Elementen von zwei Mengen A und B nichts anderes ist als eine Teilmenge des kartesischen Produkts
+        (\(R \subseteq A \times B\)).
+        Die Elemente \(a \in A\) und \(b \in B\) stehen also genau dann in Relation (\(a \sim b\)), 
+        wenn sie in der Menge \(R \subseteq A \times B\), die die Relation beschreibt, als Tupel enthalten sind
+        (\(a \sim b \iff (a, b) \in R\)).
+        \\Ein einfaches Beispiel ist die Kleiner-Gleich-Relation \(R_\leq\) als Teilmenge von \(\mathbb{N} \times \mathbb{N}\), 
+        bei der für ein Element \((a, b) \in R_\leq\) stets gilt, das a kleiner oder gleich b ist 
+        \\(\((a, b) \in R_\leq \subseteq \mathbb{N} \times \mathbb{N} \iff a \leq b\)). 
+
+    \subsection{Abbildungen}
+
+\section{Gruppen}
+    \subsection{Verknüpfungen}
 
 \end{document}
