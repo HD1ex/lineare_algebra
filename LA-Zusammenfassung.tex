@@ -98,6 +98,40 @@ bookmarks=true,%
         \\(\((a, b) \in R_\leq \subseteq \mathbb{N} \times \mathbb{N} \iff a \leq b\)). 
 
     \subsection{Abbildungen}
+        Abbildungen können wir wieder aufbauend definieren, es hilft aber auch hier erstmal eine intuitivere Beschreibung vorzuziehen.
+        \\In der Schule haben wir Funktionen kennengelernt, die (reele) Zahlen als Eingabe nehmen und ihnen andere Zahlen zuweisen.
+        Beispielsweise die Funktion \(f(x) = x^2\). Abbildungen verallgemeinern das ganze jetzt nochmal und geben dieser Funktion einen \enquote{Kontext},
+        welcher darin besteht, anzugeben von welcher in welche Menge abgebildet wird.
+        \\Man kann das obige Beispiel als folgende Abbildung definieren \(f: \mathbb{R} \to \mathbb{R}_+, x \mapsto x^2\). 
+        \\Das liest sich folgendermaßen: \enquote{f bildet von den reellen Zahlen in die positiven reellen Zahlen ab, 
+        indem ein x auf sein quadrat abgebildet wird.}
+        \\Auffällig ist hier, das die positiven reelen Zahlen als sogenannten \textbf{Zielbereich} gewählt wurden.
+        Natürlich hätte man auch hier alle reellen Zahlen dafür wählen können, aber dies verdeutlicht nochmal, das es wirklich nur positive Ergebnisse oder \textbf{Bilder} gibt.
+        Alle Elemente, auf die wirklich abgebildet wird (also die Menge aller Bilder), nennt man Bildbereich \(Bild(f) := \{f(x) : x \in \mathbb{R}\}\).
+        \\Das es auch sinnvoll und notwendig ist, den \textbf{Definitionsbereich} einzuschränken zu können, zeigt das folgende Beispiel: 
+        \\\(g: \mathbb{R} \setminus \{0\} \to \mathbb{R} \setminus \{0\}, x \mapsto \frac{1}{x}\)
+        \\\enquote{g bildet von den rellen Zahlen ohne Null in sich selbst ab, indem ein x auf sein multiplikativ Inverses abgebildet wird.}
+        \\Da die Null kein multiplikativ Inverses besitzt (oder ist), wird sie aus dem Definitionsbereich (bzw. Bildbereich) ausgeschlossen.
+        Es existiert also keine Zahl mit der die Null multipliziert werden kann, damit 1 rauskommt, deswegen wird sie hier ausgeschlossen. 
+        
+        Zwei wichtige, mögliche Eigenschaften von Abbildungen können an dieser Stelle schonmal informativ festgehalten werden:
+        \begin{itemize}
+            \item Eine Abbildung ist surjektiv genau dann, wenn jedes Element im Zielbereich getroffen wird (Zielbereich = Bildbereich).
+            \item Eine Abbildung ist injektiv genau dann, wenn auf jedes Element maximal einmal abgebildet wird. 
+        \end{itemize}
+
+
+        Nachdem wir nun Abbildungen kennengelernt haben, definieren wir sie jetzt formal mithilfe der Relationen.
+        \\Sei folgende Abbildung gegebenen: \(f: A \to B\) (f bildet also von A nach B ab).
+        \\Wenn wir jetzt das kartesische Produkt aus A und B bilden \(A \times B\), erhalten wir alle Kombinationen aus Ein- und Ausgaben.
+        \\Nun können wir f als Teilmenge von diesem ansehen \(f \subseteq A \times B\).
+        f ist also nichts anderes als eine Relation.
+        \\Diese Relation hat aber besondere Eigenschaften: 
+        Jedem Element aus der Eingabe muss \textbf{genau ein} Element aus der Ausgabe zugewiesen werden.
+        \\Es darf also keine Eingabe ausgelassen werden, also undefiniert bleiben (Bsp. \(\frac{1}{x}\)) 
+        und jedes Element darf auf maximal ein Element abgebildet werden. 
+        Diese beiden Abbildungseigenschaften werden bei Relationen als linkstotal und rechtseindeutig bezeichnet, 
+        Surjektivität und Injektivität als rechtstotal und linkseindeutig.
 
 \section{Gruppen}
     \subsection{Verknüpfungen}
