@@ -39,7 +39,7 @@ bookmarks=true,%
     Also kann ein Objekt in einer Menge entweder (einmal) enthalten sein oder nicht.
     \\Aber was ist denn nun ein solches Objekt?
     \\Naja prinzipiell begrenzt die lineare Algebra dies nicht.
-    Sinnvoll für die Mathematik wäre nur, wenn man mit diesen auch irgendwie \enquote{rechnen} kann. 
+    Sinnvoll für die Mathematik wäre nur, wenn man mit diesem auch irgendwie \enquote{rechnen} kann. 
     Zahlen sind hier naheliegend, aber später werden noch andere Objekte auftauchen mit denen man auch \enquote{rechnen} kann.
     \\Wir halten also fest, das eine Menge X eine lose Ansammlung von Objekten ist, 
     aus der man sich Elemente herausnehmen kann bzw. entscheiden kann, ob ein Element x darin enthalten ist oder nicht (\(x \in X\) oder \(x\notin X\)).
@@ -77,20 +77,23 @@ bookmarks=true,%
         Nun wollen wir uns Beziehungen einzelner Elemente von Mengen anschauen: Die sogenannten Relationen.
         Eine Relation sagt verallgemeinert aus, ob ein Element mit einem anderen in einer bestimmten Weise in Beziehung steht oder nicht.
         Das schöne daran ist nun, das wir Relationen wieder per Definition auf die Mengenlehre zurückführen können.
-        \\Wir führen zunächst das kartesische Produkt zweier Mengen A und B ein:
+
+        Wir führen zunächst das kartesische Produkt zweier Mengen A und B ein:
         \\\quad\(A \times B := \{(a, b) : a \in A, b \in B\}\)
         \\Welche Elemente kann man nun aus dieser neuen Menge \(A \times B\) herausnehmen?
         Im kartesischen Produkt finden wir jede Kombination von den Elementen aus A mit Elementen aus B.
         Ein Element aus diesem kartesischen Produkt nennen wir (2-)Tupel oder auch Paar. 
         Ein Tupel ist eine Liste oder Folge von Elementen aus Mengen. 
         In unserem Fall ist der erste Eintrag aus der Menge A und der zweite Eintrag aus der Menge B.
-        \\Wenn wir uns jetzt nochmal die Relationen von oben anschauen erkennen wir, 
+
+        Wenn wir uns jetzt nochmal die Relationen von oben anschauen erkennen wir, 
         das eine Relation R von Elementen von zwei Mengen A und B nichts anderes ist als eine Teilmenge des kartesischen Produkts
         (\(R \subseteq A \times B\)).
         Die Elemente \(a \in A\) und \(b \in B\) stehen also genau dann in Relation (\(a \sim b\)), 
         wenn sie in der Menge \(R \subseteq A \times B\), die die Relation beschreibt, als Tupel enthalten sind
         (\(a \sim b \iff (a, b) \in R\)).
-        \\Ein einfaches Beispiel ist die Kleiner-Gleich-Relation \(R_\leq\) als Teilmenge von \(\mathbb{N} \times \mathbb{N}\), 
+
+        Ein einfaches Beispiel ist die Kleiner-Gleich-Relation \(R_\leq\) als Teilmenge von \(\mathbb{N} \times \mathbb{N}\), 
         bei der für ein Element \((a, b) \in R_\leq\) stets gilt, das a kleiner oder gleich b ist 
         \\(\((a, b) \in R_\leq \subseteq \mathbb{N} \times \mathbb{N} \iff a \leq b\)). 
 
